@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .h6 {
+    font-weight: 700;
+    font-size: 34px;
+  }
+
+  .t {
+    @apply transition-all duration-300 ease-in-out cursor-pointer;
+  }
+
+  .link {
+    color: #13009f;
+    opacity: 1;
+  }
+
+  .inactive {
+    opacity: 0.5;
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+
+:root {
+  font-family: "Sora", sans-serif;
+  color: #120b48;
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control</title>
+    <style>
+      #controlHelpMeOut,
+      .controlHelpMeOut {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        background-color: rgb(30, 29, 29);
+        color: white;
+        padding: 10px;
+        padding-bottom: 0;
+        height: 100px;
+        width: max-content;
+        border-radius: 100px;
+        box-shadow: 0 0 5px 3px rgb(165, 150, 150);
+        position: fixed;
+        left: 50%;
+        bottom: 5%;
+        transform: translate(-50%, -50%);
+        z-index: 1000000000;
+        cursor: pointer;
+      }
+
+      .controlHelpMeOuttime {
+        display: flex;
+        gap: 2;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        border-right: 1px solid white;
+        padding: 0 20px;
+        margin-right: 20px;
+      }
+
+      .controlHelpMeOuttime > p > .hours,
+      .controlHelpMeOuttime > p > .minutes,
+      .controlHelpMeOuttime > p > .seconds {
+        min-width: 30px;
+        font-weight: 500;
+      }
+
+      .controlHelpMeOutdot {
+        height: 8px;
+        width: 8px;
+        color: white;
+        background-color: red;
+        border-radius: 9999px;
+        margin-left: 20px;
+        box-shadow: 0 0 5px 3px rgb(149, 8, 8);
+      }
+
+      .controlHelpMeOutbtn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .controlHelpMeOutcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+      }
+
+      .controlHelpMeOutcontainer > span {
+        display: grid;
+        place-content: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 9999px;
+        background-color: aliceblue;
+        color: #120b48;
+        cursor: pointer;
+      }
+
+      .controlHelpMeOutcontainer > p {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .controlHelpMeOutlast > span {
+        background-color: gray;
+      }
+
+      .controlHelpMeOutcontainer > .pause > * {
+        max-width: 20px;
+        max-width: 20px;
+      }
+
+      .controlHelpMeOutlast {
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="controlHelpMeOut">
+      <div class="controlHelpMeOuttime">
+        <p>
+          <span class="hours">00</span> : <span class="minutes">00</span> :
+          <span class="seconds">00</span>
+        </p>
+        <span class="controlHelpMeOutdot"></span>
+      </div>
+
+      <div class="controlHelpMeOutbtn-wrapper">
+        <div class="controlHelpMeOutcontainer">
+          <span class="pause"></span>
+          <p class="pauseText">Pause</p>
+        </div>
+
+        <div class="controlHelpMeOutcontainer">
+          <span class="stop"></span>
+          <p>Stop</p>
+        </div>
+
+        <div class="controlHelpMeOutcontainer">
+          <span class="video"></span>
+          <p>Video</p>
+        </div>
+
+        <div class="controlHelpMeOutcontainer">
+          <span class="mic"></span>
+          <p>Audio</p>
+        </div>
+
+        <div class="controlHelpMeOutcontainer controlHelpMeOutlast">
+          <span class="trash"></span>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
